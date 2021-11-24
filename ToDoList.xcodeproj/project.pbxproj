@@ -14,6 +14,8 @@
 		F4024A76274E19EB00B5776C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4024A64274E19EB00B5776C /* Assets.xcassets */; };
 		F4024A77274E19EB00B5776C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4024A64274E19EB00B5776C /* Assets.xcassets */; };
 		F4024A82274E1C3100B5776C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024A81274E1C3100B5776C /* ListView.swift */; };
+		F4024A84274E1E8800B5776C /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024A83274E1E8800B5776C /* ListRowView.swift */; };
+		F4024A86274E225B00B5776C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024A85274E225B00B5776C /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F4024A6F274E19EB00B5776C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4024A71274E19EB00B5776C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F4024A81274E1C3100B5776C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F4024A83274E1E8800B5776C /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		F4024A85274E225B00B5776C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				F4024A81274E1C3100B5776C /* ListView.swift */,
+				F4024A83274E1E8800B5776C /* ListRowView.swift */,
+				F4024A85274E225B00B5776C /* AddView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,7 +195,9 @@
 			files = (
 				F4024A74274E19EB00B5776C /* ContentView.swift in Sources */,
 				F4024A72274E19EB00B5776C /* ToDoListApp.swift in Sources */,
+				F4024A86274E225B00B5776C /* AddView.swift in Sources */,
 				F4024A82274E1C3100B5776C /* ListView.swift in Sources */,
+				F4024A84274E1E8800B5776C /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +349,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,7 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +378,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
