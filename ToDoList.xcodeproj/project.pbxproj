@@ -13,6 +13,7 @@
 		F4024A75274E19EB00B5776C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024A63274E19EA00B5776C /* ContentView.swift */; };
 		F4024A76274E19EB00B5776C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4024A64274E19EB00B5776C /* Assets.xcassets */; };
 		F4024A77274E19EB00B5776C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4024A64274E19EB00B5776C /* Assets.xcassets */; };
+		F4024A82274E1C3100B5776C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024A81274E1C3100B5776C /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F4024A69274E19EB00B5776C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4024A6F274E19EB00B5776C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4024A71274E19EB00B5776C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F4024A81274E1C3100B5776C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F4024A61274E19EA00B5776C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F4024A80274E1C2100B5776C /* Views */,
 				F4024A62274E19EA00B5776C /* ToDoListApp.swift */,
 				F4024A63274E19EA00B5776C /* ContentView.swift */,
 				F4024A64274E19EB00B5776C /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				F4024A71274E19EB00B5776C /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		F4024A80274E1C2100B5776C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4024A81274E1C3100B5776C /* ListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			files = (
 				F4024A74274E19EB00B5776C /* ContentView.swift in Sources */,
 				F4024A72274E19EB00B5776C /* ToDoListApp.swift in Sources */,
+				F4024A82274E1C3100B5776C /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
