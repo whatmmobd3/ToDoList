@@ -1,25 +1,22 @@
-//
-//  ListView.swift
-//  ToDoList (iOS)
-//
-//  Created by David Nguyen on 24/11/2021.
-//
-
 import SwiftUI
 
 struct ListView: View {
     
-    @EnvironmentObject var ListViewModel: ListViewModel
+    @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
         NavigationView{
             List{
-                ForEach(ListViewModel.items) { item in
+                ForEach(listViewModel.items) { item in
                     ListRowView(item: item)
+                        .onTapGesture {
+                            withAnimation(.linear){
+                                listViewModel.updateItem(item: item)
+                            }
+                        }
                 }
-                .onMove(perform: ListViewModel.moveItem)
-                .onDelete(perform: ListViewModel.deleteItem)
-
+                .onMove(perform: listViewModel.moveItem)
+                .onDelete(perform: listViewModel.deleteItem)
             }		
             .listStyle(.plain)
             .navigationTitle("To Do List 📃")
@@ -29,8 +26,6 @@ struct ListView: View {
                     NavigationLink("Add", destination: AddView()))
         }
     }
-    
-   
 }
 
 struct ListView_Previews: PreviewProvider {
